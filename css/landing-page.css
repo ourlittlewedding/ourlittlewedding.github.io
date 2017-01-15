@@ -22,7 +22,12 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
+}
+
+.topnav-heart {
+  color: #b95e5e;
+  font-size: 1.3em;
 }
 
 .lead {
@@ -35,7 +40,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/header1.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -43,6 +48,7 @@ h6 {
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;
+    top: 200px;
 }
 
 .intro-message > h1 {
@@ -63,7 +69,8 @@ h6 {
 
 @media(max-width:767px) {
     .intro-message {
-        padding-bottom: 15%;
+        padding-bottom: 15;
+        top: 150px;
     }
 
     .intro-message > h1 {
