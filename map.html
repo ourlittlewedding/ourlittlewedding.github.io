@@ -55,6 +55,28 @@ map.on('load', function () {
         }
     }, 'aerialway-white')
 
+    map.addLayer({
+        'id': 'lenox-library',
+        'type': 'fill-extrusion',
+        'source': {
+            'type': 'geojson',
+            'data': './data/ll_bldg_parts.geojson'
+        },
+        'paint': {
+            'fill-extrusion-color': {
+                'property': 'color',
+                'type': 'identity'
+            },
+            'fill-extrusion-height': {
+                'property': 'height',
+                'type': 'identity'
+            },
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 0.75
+        }
+    })
+
+
     map.addSource('poi', {
         'type': 'geojson',
         'data': './data/poi.geojson'
