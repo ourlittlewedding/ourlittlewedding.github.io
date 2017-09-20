@@ -81,6 +81,9 @@ footer {
     font-size: 48px;
 }
 
+.map-embed-container {
+    padding-bottom: 50%;
+}
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15;
